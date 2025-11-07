@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Coding - Interactive Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Future is Here</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#practice">Practice</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Future</h1>
+            <p>Master programming with interactive tutorials and hands-on practice</p>
+            <button class="cta-button" onclick="scrollToTutorials()">Start Learning</button>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Featured Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-badge">Beginner</div>
+                <h3>Web Development Fundamentals</h3>
+                <p class="course-description">Learn HTML, CSS, and JavaScript from scratch. Build your first website in 4 weeks.</p>
+                <div class="course-info">
+                    <span>⏱️ 6 hours</span>
+                    <span>📚 24 lessons</span>
+                </div>
+                <button class="enroll-button">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <div class="course-badge">Intermediate</div>
+                <h3>JavaScript Mastery</h3>
+                <p class="course-description">Deep dive into modern JavaScript, ES6+, async programming, and DOM manipulation.</p>
+                <div class="course-info">
+                    <span>⏱️ 8 hours</span>
+                    <span>📚 32 lessons</span>
+                </div>
+                <button class="enroll-button">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <div class="course-badge">Beginner</div>
+                <h3>Python for Everyone</h3>
+                <p class="course-description">Start your programming journey with Python. Perfect for beginners and data enthusiasts.</p>
+                <div class="course-info">
+                    <span>⏱️ 10 hours</span>
+                    <span>📚 40 lessons</span>
+                </div>
+                <button class="enroll-button">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <div class="course-badge">Advanced</div>
+                <h3>Full Stack Development</h3>
+                <p class="course-description">Build complete web applications with React, Node.js, databases, and deployment.</p>
+                <div class="course-info">
+                    <span>⏱️ 20 hours</span>
+                    <span>📚 80 lessons</span>
+                </div>
+                <button class="enroll-button">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <div class="course-badge">Intermediate</div>
+                <h3>Data Structures & Algorithms</h3>
+                <p class="course-description">Master problem-solving skills and ace technical interviews with real-world examples.</p>
+                <div class="course-info">
+                    <span>⏱️ 15 hours</span>
+                    <span>📚 60 lessons</span>
+                </div>
+                <button class="enroll-button">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <div class="course-badge">Beginner</div>
+                <h3>Responsive Web Design</h3>
+                <p class="course-description">Create beautiful, mobile-friendly websites that work on any device or screen size.</p>
+                <div class="course-info">
+                    <span>⏱️ 5 hours</span>
+                    <span>📚 20 lessons</span>
+                </div>
+                <button class="enroll-button">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="tutorials" class="tutorials"></section>
+        <h2>Choose Your Path</h2>
+        <div class="tutorial-grid">
+            <div class="tutorial-card" onclick="selectTutorial('html')">
+                <div class="icon">🌐</div>
+                <h3>HTML</h3>
+                <p>Build the structure of web pages</p>
+            </div>
+            <div class="tutorial-card" onclick="selectTutorial('css')">
+                <div class="icon">🎨</div>
+                <h3>CSS</h3>
+                <p>Style and design beautiful websites</p>
+            </div>
+            <div class="tutorial-card" onclick="selectTutorial('javascript')">
+                <div class="icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Add interactivity and logic</p>
+            </div>
+            <div class="tutorial-card" onclick="selectTutorial('python')">
+                <div class="icon">🐍</div>
+                <h3>Python</h3>
+                <p>Learn programming fundamentals</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="practice" class="practice-section">
+        <h2>Try It Yourself</h2>
+        <div class="code-editor">
+            <div class="editor-header">
+                <span class="editor-title">Code Editor</span>
+                <button class="run-button" onclick="runCode()">Run Code</button>
+            </div>
+            <textarea id="codeInput" placeholder="Write your code here...">// Try writing some JavaScript
+console.log("Hello, World!");
+
+// Calculate sum
+let a = 5;
+let b = 10;
+console.log("Sum:", a + b);</textarea>
+            <div class="output-section">
+                <div class="output-header">Output</div>
+                <pre id="output"></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Why Learn Coding?</h2>
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">💼</span>
+                <h3>Career Opportunities</h3>
+                <p>Open doors to high-demand tech jobs</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🧠</span>
+                <h3>Problem Solving</h3>
+                <p>Develop logical thinking skills</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🚀</span>
+                <h3>Create Anything</h3>
+                <p>Build apps, websites, and tools</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CodeLearn. Start your coding journey today!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
