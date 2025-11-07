@@ -3,167 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Coding - Interactive Tutorials</title>
+    <title>GameHub - Your Ultimate Gaming Destination</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">The Future is Here</div>
-            <ul class="nav-links">
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>GameHub</h1>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#tutorials">Tutorials</a></li>
-                <li><a href="#practice">Practice</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#community">Community</a></li>
             </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to the Future</h1>
-            <p>Master programming with interactive tutorials and hands-on practice</p>
-            <button class="cta-button" onclick="scrollToTutorials()">Start Learning</button>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Ultimate Gaming Experience</h2>
+                <p>Discover the latest games, reviews, and connect with gamers worldwide</p>
+                <button class="cta-button">Explore Games</button>
+            </div>
+            <div class="hero-image">
+                <div class="game-controller"></div>
+            </div>
+        </section>
+
+        <section id="games" class="featured-games">
+            <div class="container">
+                <h2>Featured Games</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image"></div>
+                        <h3>Cyber Quest 2077</h3>
+                        <p>Action RPG</p>
+                        <div class="rating">★★★★☆</div>
+                        <button class="play-button">Play Now</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image"></div>
+                        <h3>Space Warriors</h3>
+                        <p>Strategy</p>
+                        <div class="rating">★★★★★</div>
+                        <button class="play-button">Play Now</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image"></div>
+                        <h3>Racing Thunder</h3>
+                        <p>Racing</p>
+                        <div class="rating">★★★★☆</div>
+                        <button class="play-button">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>        <s
+ection id="reviews" class="reviews">
+            <div class="container">
+                <h2>Latest Reviews</h2>
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <h3>Cyber Quest 2077 Review</h3>
+                        <div class="review-meta">
+                            <span class="reviewer">By GameMaster</span>
+                            <span class="date">Nov 5, 2025</span>
+                        </div>
+                        <p>An incredible journey through a dystopian future with stunning visuals and engaging gameplay...</p>
+                        <div class="rating">★★★★☆</div>
+                    </article>
+                    <article class="review-card">
+                        <h3>Space Warriors Analysis</h3>
+                        <div class="review-meta">
+                            <span class="reviewer">By ProGamer</span>
+                            <span class="date">Nov 4, 2025</span>
+                        </div>
+                        <p>The best strategy game of the year with innovative mechanics and beautiful graphics...</p>
+                        <div class="rating">★★★★★</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <div class="container">
+                <h2>Gaming News</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image"></div>
+                        <div class="news-content">
+                            <h3>New Gaming Console Released</h3>
+                            <p>The latest gaming console promises 8K gaming and revolutionary features...</p>
+                            <span class="news-date">Nov 6, 2025</span>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image"></div>
+                        <div class="news-content">
+                            <h3>Esports Championship 2025</h3>
+                            <p>The biggest esports tournament of the year is coming with $10M prize pool...</p>
+                            <span class="news-date">Nov 5, 2025</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="community">
+            <div class="container">
+                <h2>Join Our Community</h2>
+                <div class="community-stats">
+                    <div class="stat">
+                        <h3>50K+</h3>
+                        <p>Active Gamers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Games Available</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Support</p>
+                    </div>
+                </div>
+                <button class="join-button">Join Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameHub</h3>
+                    <p>Your ultimate gaming destination</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameHub. All rights reserved.</p>
+            </div>
         </div>
-    </section>
-
-    <section id="courses" class="courses">
-        <h2>Featured Courses</h2>
-        <div class="courses-grid">
-            <div class="course-card">
-                <div class="course-badge">Beginner</div>
-                <h3>Web Development Fundamentals</h3>
-                <p class="course-description">Learn HTML, CSS, and JavaScript from scratch. Build your first website in 4 weeks.</p>
-                <div class="course-info">
-                    <span>⏱️ 6 hours</span>
-                    <span>📚 24 lessons</span>
-                </div>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course-card">
-                <div class="course-badge">Intermediate</div>
-                <h3>JavaScript Mastery</h3>
-                <p class="course-description">Deep dive into modern JavaScript, ES6+, async programming, and DOM manipulation.</p>
-                <div class="course-info">
-                    <span>⏱️ 8 hours</span>
-                    <span>📚 32 lessons</span>
-                </div>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course-card">
-                <div class="course-badge">Beginner</div>
-                <h3>Python for Everyone</h3>
-                <p class="course-description">Start your programming journey with Python. Perfect for beginners and data enthusiasts.</p>
-                <div class="course-info">
-                    <span>⏱️ 10 hours</span>
-                    <span>📚 40 lessons</span>
-                </div>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course-card">
-                <div class="course-badge">Advanced</div>
-                <h3>Full Stack Development</h3>
-                <p class="course-description">Build complete web applications with React, Node.js, databases, and deployment.</p>
-                <div class="course-info">
-                    <span>⏱️ 20 hours</span>
-                    <span>📚 80 lessons</span>
-                </div>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course-card">
-                <div class="course-badge">Intermediate</div>
-                <h3>Data Structures & Algorithms</h3>
-                <p class="course-description">Master problem-solving skills and ace technical interviews with real-world examples.</p>
-                <div class="course-info">
-                    <span>⏱️ 15 hours</span>
-                    <span>📚 60 lessons</span>
-                </div>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course-card">
-                <div class="course-badge">Beginner</div>
-                <h3>Responsive Web Design</h3>
-                <p class="course-description">Create beautiful, mobile-friendly websites that work on any device or screen size.</p>
-                <div class="course-info">
-                    <span>⏱️ 5 hours</span>
-                    <span>📚 20 lessons</span>
-                </div>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="tutorials" class="tutorials"></section>
-        <h2>Choose Your Path</h2>
-        <div class="tutorial-grid">
-            <div class="tutorial-card" onclick="selectTutorial('html')">
-                <div class="icon">🌐</div>
-                <h3>HTML</h3>
-                <p>Build the structure of web pages</p>
-            </div>
-            <div class="tutorial-card" onclick="selectTutorial('css')">
-                <div class="icon">🎨</div>
-                <h3>CSS</h3>
-                <p>Style and design beautiful websites</p>
-            </div>
-            <div class="tutorial-card" onclick="selectTutorial('javascript')">
-                <div class="icon">⚡</div>
-                <h3>JavaScript</h3>
-                <p>Add interactivity and logic</p>
-            </div>
-            <div class="tutorial-card" onclick="selectTutorial('python')">
-                <div class="icon">🐍</div>
-                <h3>Python</h3>
-                <p>Learn programming fundamentals</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="practice" class="practice-section">
-        <h2>Try It Yourself</h2>
-        <div class="code-editor">
-            <div class="editor-header">
-                <span class="editor-title">Code Editor</span>
-                <button class="run-button" onclick="runCode()">Run Code</button>
-            </div>
-            <textarea id="codeInput" placeholder="Write your code here...">// Try writing some JavaScript
-console.log("Hello, World!");
-
-// Calculate sum
-let a = 5;
-let b = 10;
-console.log("Sum:", a + b);</textarea>
-            <div class="output-section">
-                <div class="output-header">Output</div>
-                <pre id="output"></pre>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>Why Learn Coding?</h2>
-        <div class="features">
-            <div class="feature">
-                <span class="feature-icon">💼</span>
-                <h3>Career Opportunities</h3>
-                <p>Open doors to high-demand tech jobs</p>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">🧠</span>
-                <h3>Problem Solving</h3>
-                <p>Develop logical thinking skills</p>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">🚀</span>
-                <h3>Create Anything</h3>
-                <p>Build apps, websites, and tools</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 CodeLearn. Start your coding journey today!</p>
     </footer>
 
     <script src="script.js"></script>
